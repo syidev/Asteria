@@ -7,21 +7,62 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">data-operations</h1>
-        <form class="col-sm-4 col-sm-offset-4">
-            <div class="form-group">
-                <label for="inputOne">Input One</label>
-                <input type="text" class="form-control" id="inputOne" value="iNpUt OnE">
-            </div>
-            <div class="form-group">
-                <label for="inputTwo">Input Two</label>
-                <input type="text" class="form-control" id="inputTwo" value="(InPuT tWo)">
-            </div>
-            <button type="submit" class="btn btn-info" id="join">Join</button>
-            <button type="submit" class="btn btn-info" id="showSize">Show size</button>
-            <button type="submit" class="btn btn-info" id="lettersShift">Letters shift</button>
-        </form>
+        <div class="row">
+            <h1 class="text-center">contact-list</h1>
+            <form class="col-sm-4 col-sm-offset-4">
+                <div class="form-group">
+                    <label for="input-one">Name</label>
+                    <input type="text" class="form-control" id="name" value="John">
+                </div>
+                <div class="form-group">
+                    <label for="input-two">Surname</label>
+                    <input type="text" class="form-control" id="surname" value="Doe">
+                </div>
+                <div class="form-group">
+                    <label for="input-one">Phone</label>
+                    <input type="text" class="form-control" id="phone" value="+1 (123) 456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="input-two">Avatar</label>
+                    <input type="text" class="form-control" id="avatar" value="http://lorempixel.com/50/50/abstract">
+                </div>
+                 <div class="form-group">
+                    <label for="input-one">E-mail</label>
+                    <input type="text" class="form-control" id="email" value="john.doe@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="input-two">Gender</label>
+                    <select id="gender" class="form-control">
+                        <option>male</option>
+                        <option>female</option>
+                    </select>
+                </div>
+                <label for="input-one">Marital status</label>
+                <div class="form-group">
+                    <label class="radio-inline" for="married">
+                        <input type="radio" name="maritalStatus" id="married" value="married" checked>married
+                    </label>
+                    <label class="radio-inline for="single">
+                        <input type="radio" name="maritalStatus" id="single" value="single">single
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-info" id="submit">Add contact</button>
+            </form>
+        </div>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Phone</th>
+                <th>Avatar</th>
+                <th>E-mail</th>
+                <th>Gender</th>
+                <th>Marital status</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
     </div>
-    <script src="data-operations.js"></script>
+    <script src="contact-list.js"></script>
 </body>
 </html>
